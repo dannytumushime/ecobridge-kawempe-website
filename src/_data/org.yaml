@@ -3,7 +3,7 @@ legal_name: ECO-BRIDGE KAWEMPE
 tagline: Bridging Communities to Environmental Solutions
 org_type: Community-Based Organization
 registration_authority: "Kampala Capital City Authority (KCCA), Kawempe Division Community Development Office"
-registration_status: "Application submitted — in progress"
+registration_status: "Application submitted, review in progress"
 registration_status_short: In progress
 name_history: "ECO-BRIDGE AFRICA (founded Jan 2025) → ECO-BRIDGE (renamed Feb 2026, on KCCA's advice) → ECO-BRIDGE KAWEMPE (current, Mar 2026)"
 founded_date: "11 January 2025"
@@ -28,21 +28,21 @@ executive_committee:
   - role: Vice-Chairperson
     name: ""
     published: false
-  - role: "Committee Member — Environment & Climate Action"
+  - role: "Committee Member: Environment & Climate Action"
     name: ""
     published: false
-  - role: "Committee Member — Health, Education & Community Development"
+  - role: "Committee Member: Health, Education & Community Development"
     name: ""
     published: false
-  - role: "Committee Member — Livelihoods & Economic Empowerment"
+  - role: "Committee Member: Livelihoods & Economic Empowerment"
     name: ""
     published: false
 
 financial:
-  bank_signatories: "Any two (2) of: Chairperson, Treasurer, Secretary — per Article 24 of our Constitution"
-  financial_year: "1 January – 31 December"
+  bank_signatories: "Any two (2) of Chairperson, Treasurer, or Secretary, as set out in Article 24 of our Constitution"
+  financial_year: "1 January to 31 December"
   audit: "Annual independent audit, presented to the General Assembly at the AGM (Article 26)"
-  use_of_funds: "No income or asset may be distributed to any member or official (Article 25) — non-profit basis only"
+  use_of_funds: "No income or asset may be distributed to any member or official (Article 25). The Organization operates strictly on a non-profit basis."
 
 documents:
   - title: Constitution

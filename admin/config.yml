@@ -4,7 +4,7 @@ backend:
 
 # After you connect this repo to Netlify and enable Identity + Git Gateway
 # (see the checklist Claude gave you), editors log in at yoursite.com/admin/
-# with an email invite from Netlify Identity — no GitHub account needed.
+# with an email invite from Netlify Identity. No GitHub account needed.
 
 publish_mode: simple
 media_folder: "src/images/uploads"

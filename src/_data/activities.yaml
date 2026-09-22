@@ -4,7 +4,7 @@ scope_note: "These activities took place before our area of operation was confir
 sections:
   - code: "3.1"
     title: School Environmental Sensitization Outreach
-    intro: "Kitante area schools — interactive classroom sessions, waste segregation demonstrations, and a school-compound tree planting exercise."
+    intro: "Kitante area schools: interactive classroom sessions, waste segregation demonstrations, and a school-compound tree planting exercise."
     photos:
       - image: /images/activities/image1.jpg
         alt: "School outreach assembly at a Kitante area school, January 2025."
@@ -48,7 +48,7 @@ sections:
 
 lessons:
   - field: Community ownership
-    value: "Essential for sustainable change — a lesson carried directly into our current Work Plan"
+    value: "Essential for sustainable change, a lesson carried directly into our current Work Plan"
   - field: Youth engagement
     value: "Engaging youth at school and community level produces quicker behaviour change"
   - field: Practical demonstration
@@ -59,7 +59,7 @@ lessons:
 home_gallery:
   - image: /images/activities/image1.jpg
     alt: "ECO-BRIDGE KAWEMPE members leading a school environmental outreach assembly."
-    caption: "School environmental outreach — interactive sessions on waste management and climate change."
+    caption: "School environmental outreach: interactive sessions on waste management and climate change."
   - image: /images/activities/image4.jpg
     alt: "Members sorting collected waste during a community clean-up drive."
     caption: "Community clean-up and waste sorting drive."
