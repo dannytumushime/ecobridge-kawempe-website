@@ -1,0 +1,62 @@
+- number: "01"
+  title: Environmental conservation
+  home_summary: "Tree planting, waste management, clean-up activities, and pollution reduction within Kawempe Division and surrounding communities."
+  heading: "Environmental conservation, waste management & pollution reduction"
+  activities:
+    - activity: Community clean-up drives
+      detail: "3 events · Jun–Sep 2026 · Project Management Committee"
+    - activity: Door-to-door waste segregation
+      detail: "50+ households · Jun–Sep 2026"
+    - activity: Tree planting & ecosystem restoration
+      detail: "100+ seedlings · Jun–Jul 2026"
+    - activity: Air quality & pollution awareness
+      detail: "2+ sessions · Jun–Aug 2026"
+
+- number: "02"
+  title: "Community health & WASH"
+  home_summary: "Water, Sanitation and Hygiene education, environmental health awareness, and disease prevention in schools and households."
+  heading: "Community health & WASH promotion"
+  activities:
+    - activity: School environmental & health outreach
+      detail: "3+ schools · 200+ students · Jun–Aug 2026"
+    - activity: Community WASH awareness sessions
+      detail: "4+ sessions · Jun–Sep 2026"
+    - activity: Distribution of hygiene materials
+      detail: "200+ items to households & schools · Jun–Aug 2026"
+
+- number: "03"
+  title: Economic empowerment
+  home_summary: "Vocational skills training in composting and plastic upcycling — turning environmental work into income for youth and women."
+  heading: "Economic empowerment of youth & women"
+  intro: "Two group income-generating projects (IGPs) combine environmental work with real income for members."
+  activities:
+    - activity: "IGP 1 — Composting & organic manure"
+      detail: "20+ trained · 2 demo sites · starts Jun 2026"
+    - activity: "IGP 2 — Plastic upcycling & eco-craft"
+      detail: "15+ trained · 3–5 product lines · starts Jul 2026"
+    - activity: Market linkages
+      detail: "5+ members earning income · Oct 2026–Feb 2027"
+
+- number: "04"
+  title: Environmental literacy
+  home_summary: "School outreach programmes, community workshops, and environmental clubs that build youth leadership."
+  heading: "Environmental literacy & youth leadership"
+  activities:
+    - activity: Environmental literacy workshops
+      detail: "2+ workshops · 50+ youth · Jun–Aug 2026"
+    - activity: School environmental clubs
+      detail: "Active in 2+ schools · Jun–Aug 2026"
+    - activity: Climate change awareness sessions
+      detail: "3+ sessions · 100+ participants · Jun–Sep 2026"
+
+- number: "05"
+  title: Civic engagement
+  home_summary: "Working closely with Local Council leaders, KCCA, and partner organisations on community participation."
+  heading: "Community participation & civic engagement"
+  activities:
+    - activity: Quarterly community barazas with LC leaders
+      detail: "4 meetings · quarterly"
+    - activity: Sanitation Week community event
+      detail: "1 event · Jun/Jul 2026"
+    - activity: "Engagement with KCCA, NEMA & partners"
+      detail: "2+ meetings · Jun 2026–Feb 2027"

@@ -1,0 +1,60 @@
+---
+layout: base.njk
+title: "Our Work — ECO-BRIDGE KAWEMPE"
+description: "What ECO-BRIDGE KAWEMPE's founding members actually did: school outreach, waste segregation, tree planting, and air quality awareness in Kampala."
+permalink: /activities/
+trustbar:
+  - label: "Reporting period"
+    value: "Dec 2024 – Jan 2025"
+trustbar_link:
+  href: /governance-docs/ECO-BRIDGE_KAWEMPE_Activity_Report.pdf
+  text: "Download full Activity Report (PDF)"
+---
+<section style="padding-bottom: var(--space-lg);">
+  <div class="wrap">
+    <span class="label">Activity Report</span>
+    <h1>Our Work</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">Before {{ org.legal_name }} was formally registered, our founding members ran pilot activities in Kampala — the practical experience that led directly to formal CBO registration. This is that record.</p>
+    <div class="callout" style="margin-top:var(--space-lg); max-width:70ch;">
+      <span class="label">Note on scope</span>
+      <p style="margin:var(--space-sm) 0 0; color:var(--color-text)">{{ activities.scope_note }}</p>
+    </div>
+  </div>
+</section>
+
+{% for section in activities.sections %}
+<section {% if loop.index0 is odd %}class="section-alt"{% endif %} {% if loop.first %}style="padding-top:0;"{% endif %}>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">{{ section.code }}</span>
+      <h2>{{ section.title }}</h2>
+      <p style="color:var(--color-text-muted)">{{ section.intro }}</p>
+    </div>
+    <div class="photo-grid" {% if section.photos.length == 1 %}style="grid-template-columns: minmax(0,1fr); max-width: 420px;"{% endif %}>
+      {% for photo in section.photos %}
+      <figure>
+        <img src="{{ photo.image }}" alt="{{ photo.alt }}" loading="lazy">
+        <figcaption>{{ photo.caption }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">What we learned</span>
+      <h2>Outcomes &amp; lessons</h2>
+    </div>
+    <div class="ledger">
+      {% for l in activities.lessons %}
+      <div class="ledger-entry" style="animation-delay:{{ loop.index0 * 40 }}ms">
+        <span class="field">{{ l.field }}</span>
+        <span class="value">{{ l.value }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

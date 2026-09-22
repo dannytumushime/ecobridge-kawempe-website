@@ -1,0 +1,41 @@
+---
+layout: base.njk
+title: "Contact — ECO-BRIDGE KAWEMPE"
+description: "Get in touch with ECO-BRIDGE KAWEMPE — University Hall, Makerere University, Kampala, Uganda."
+permalink: /contact/
+---
+<section>
+  <div class="wrap">
+    <span class="label">Get in touch</span>
+    <h1>Contact</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:60ch;">Whether you're a funder doing due diligence, a KCCA officer reviewing our file, a partner organisation, or a resident of {{ org.area_of_operation }} — reach us directly.</p>
+
+    <div class="ledger" style="margin-top:var(--space-xl); max-width:640px;">
+      <div class="ledger-entry">
+        <span class="field">Email</span>
+        <span class="value"><a href="mailto:{{ org.email }}">{{ org.email }}</a></span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:40ms">
+        <span class="field">Registered office</span>
+        <span class="value">{{ org.registered_office }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:80ms">
+        <span class="field">Area of operation</span>
+        <span class="value">{{ org.area_of_operation }}</span>
+      </div>
+      {% for member in org.executive_committee %}
+      {% if member.published and (member.role == "Chairperson" or member.role == "Secretary") %}
+      <div class="ledger-entry" style="animation-delay:{{ loop.index0 * 40 + 120 }}ms">
+        <span class="field">{{ member.role }}</span>
+        <span class="value">{{ member.name }}</span>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="button-row">
+      <a class="btn btn-primary" href="mailto:{{ org.email }}">Email us</a>
+      <a class="btn btn-secondary" href="/verify/">See our full public record</a>
+    </div>
+  </div>
+</section>

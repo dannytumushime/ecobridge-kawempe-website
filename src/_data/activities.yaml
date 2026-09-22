@@ -1,0 +1,68 @@
+reporting_period: "Dec 2024 – Jan 2025"
+scope_note: "These activities took place before our area of operation was confirmed as Kawempe Division. They're included as founding-member pilot work, not as activity under our current Kawempe-focused mandate."
+
+sections:
+  - code: "3.1"
+    title: School Environmental Sensitization Outreach
+    intro: "Kitante area schools — interactive classroom sessions, waste segregation demonstrations, and a school-compound tree planting exercise."
+    photos:
+      - image: /images/activities/image1.jpg
+        alt: "School outreach assembly at a Kitante area school, January 2025."
+        caption: "School outreach assembly, January 2025."
+      - image: /images/activities/image3.jpg
+        alt: "Interactive classroom session with pupils on waste management."
+        caption: "Interactive classroom session on waste management."
+      - image: /images/activities/image2.jpg
+        alt: "Pupils holding tree seedlings distributed during the school outreach visit."
+        caption: "Tree seedlings distributed to pupils during the outreach visit."
+
+  - code: "3.2"
+    title: Community Waste Segregation Campaign
+    intro: "Door-to-door sensitisation, community barazas with Local Council leaders, and composting demonstrations using kitchen waste."
+    photos:
+      - image: /images/activities/image4.jpg
+        alt: "Community waste sorting demonstration in target area, January 2025."
+        caption: "Waste sorting demonstration, January 2025."
+      - image: /images/activities/image5.jpg
+        alt: "ECO-BRIDGE KAWEMPE members engaging households during a community outreach session."
+        caption: "Engaging households during a community outreach session."
+
+  - code: "3.4"
+    title: Tree Planting & Ecosystem Restoration
+    intro: "Seedling distribution to schools and community groups, with follow-up visits to monitor survival."
+    photos:
+      - image: /images/activities/image6.jpg
+        alt: "Members planting tree seedlings during a community restoration drive."
+        caption: "Planting tree seedlings during a restoration drive."
+      - image: /images/activities/image7.jpg
+        alt: "Members and pupils celebrating after a school tree-planting activity, January 2025."
+        caption: "After a school tree-planting activity, January 2025."
+
+  - code: "3.5"
+    title: Air Quality & Pollution Awareness
+    intro: "Sessions on the health risks of poor air quality and the dangers of burning plastics and rubbish."
+    photos:
+      - image: /images/activities/image10.jpg
+        alt: "Community awareness session under a shelter, Kampala."
+        caption: "Community awareness session, Kampala."
+
+lessons:
+  - field: Community ownership
+    value: "Essential for sustainable change — a lesson carried directly into our current Work Plan"
+  - field: Youth engagement
+    value: "Engaging youth at school and community level produces quicker behaviour change"
+  - field: Practical demonstration
+    value: "More effective than theoretical sessions alone"
+  - field: Local Council partnership
+    value: "Working closely with LC leaders strengthens community trust"
+
+home_gallery:
+  - image: /images/activities/image1.jpg
+    alt: "ECO-BRIDGE KAWEMPE members leading a school environmental outreach assembly."
+    caption: "School environmental outreach — interactive sessions on waste management and climate change."
+  - image: /images/activities/image4.jpg
+    alt: "Members sorting collected waste during a community clean-up drive."
+    caption: "Community clean-up and waste sorting drive."
+  - image: /images/activities/image8.jpg
+    alt: "Youth volunteers with bicycles after a community mobility and environment event."
+    caption: "Youth volunteers mobilising for community environmental action."

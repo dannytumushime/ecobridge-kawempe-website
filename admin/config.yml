@@ -1,0 +1,117 @@
+backend:
+  name: git-gateway
+  branch: master
+
+# After you connect this repo to Netlify and enable Identity + Git Gateway
+# (see the checklist Claude gave you), editors log in at yoursite.com/admin/
+# with an email invite from Netlify Identity — no GitHub account needed.
+
+publish_mode: simple
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "org"
+    label: "Organization Info"
+    files:
+      - name: "org"
+        label: "Legal identity, committee & documents"
+        file: "src/_data/org.yaml"
+        fields:
+          - { label: "Brand name (shown as the logo/headline name)", name: "brand_name", widget: "string" }
+          - { label: "Legal name (registered with KCCA)", name: "legal_name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Organization type", name: "org_type", widget: "string" }
+          - { label: "Registering authority", name: "registration_authority", widget: "string" }
+          - { label: "Registration status (full sentence)", name: "registration_status", widget: "string" }
+          - { label: "Registration status (short, for the trust bar)", name: "registration_status_short", widget: "string" }
+          - { label: "Name history", name: "name_history", widget: "text" }
+          - { label: "Founded date", name: "founded_date", widget: "string" }
+          - { label: "Founding members count", name: "founding_members_count", widget: "number" }
+          - { label: "Current membership count", name: "current_membership_count", widget: "number" }
+          - { label: "Membership note", name: "membership_note", widget: "string" }
+          - { label: "Registered office", name: "registered_office", widget: "string" }
+          - { label: "Area of operation", name: "area_of_operation", widget: "string" }
+          - { label: "Governed by", name: "governed_by", widget: "text" }
+          - { label: "Contact email", name: "email", widget: "string" }
+          - label: "Executive Committee"
+            name: "executive_committee"
+            widget: "list"
+            fields:
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Name", name: "name", widget: "string", required: false }
+              - { label: "Published (uncheck to show \"To be published\")", name: "published", widget: "boolean", default: false }
+          - label: "Financial accountability"
+            name: "financial"
+            widget: "object"
+            fields:
+              - { label: "Bank signatories", name: "bank_signatories", widget: "text" }
+              - { label: "Financial year", name: "financial_year", widget: "string" }
+              - { label: "Audit", name: "audit", widget: "text" }
+              - { label: "Use of funds", name: "use_of_funds", widget: "text" }
+          - label: "Governance documents"
+            name: "documents"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Filename (must already be in governance-docs/)", name: "filename", widget: "string" }
+
+  - name: "programs"
+    label: "Programs (Work Plan objectives)"
+    files:
+      - name: "objectives"
+        label: "The five objectives"
+        file: "src/_data/objectives.yaml"
+        fields:
+          - label: "Objectives"
+            name: ""
+            widget: "list"
+            fields:
+              - { label: "Number (e.g. 01)", name: "number", widget: "string" }
+              - { label: "Short title (homepage)", name: "title", widget: "string" }
+              - { label: "Homepage summary", name: "home_summary", widget: "text" }
+              - { label: "Full heading (Programs page)", name: "heading", widget: "string" }
+              - { label: "Intro paragraph (optional)", name: "intro", widget: "text", required: false }
+              - label: "Activities"
+                name: "activities"
+                widget: "list"
+                fields:
+                  - { label: "Activity name", name: "activity", widget: "string" }
+                  - { label: "Detail (target · timeline · owner)", name: "detail", widget: "string" }
+
+  - name: "activities"
+    label: "Our Work (Activity Report)"
+    files:
+      - name: "activities"
+        label: "Activity Report content"
+        file: "src/_data/activities.yaml"
+        fields:
+          - { label: "Reporting period", name: "reporting_period", widget: "string" }
+          - { label: "Scope note (callout box)", name: "scope_note", widget: "text" }
+          - label: "Report sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Section code (e.g. 3.1)", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image", media_library: { config: { multiple: false } } }
+                  - { label: "Alt text (describe what's in the photo)", name: "alt", widget: "string" }
+                  - { label: "Caption", name: "caption", widget: "string" }
+          - label: "Lessons learned"
+            name: "lessons"
+            widget: "list"
+            fields:
+              - { label: "Field", name: "field", widget: "string" }
+              - { label: "Value", name: "value", widget: "text" }
+          - label: "Homepage photo gallery"
+            name: "home_gallery"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image", media_library: { config: { multiple: false } } }
+              - { label: "Alt text", name: "alt", widget: "string" }
+              - { label: "Caption", name: "caption", widget: "string" }

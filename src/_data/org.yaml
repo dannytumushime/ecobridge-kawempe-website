@@ -1,0 +1,53 @@
+brand_name: ECO-BRIDGE
+legal_name: ECO-BRIDGE KAWEMPE
+tagline: Bridging Communities to Environmental Solutions
+org_type: Community-Based Organization
+registration_authority: "Kampala Capital City Authority (KCCA), Kawempe Division Community Development Office"
+registration_status: "Application submitted — in progress"
+registration_status_short: In progress
+name_history: "ECO-BRIDGE AFRICA (founded Jan 2025) → ECO-BRIDGE (renamed Feb 2026, on KCCA's advice) → ECO-BRIDGE KAWEMPE (current, Mar 2026)"
+founded_date: "11 January 2025"
+founding_members_count: 8
+current_membership_count: 21
+membership_note: "as of 1 March 2026, exceeding KCCA's 20-member CBO threshold"
+registered_office: "University Hall, Makerere University, Kampala, Uganda"
+area_of_operation: Kawempe Division, Kampala
+governed_by: "Constitution of the Republic of Uganda, 1995 (as amended); NGO Act, 2016; NGO Regulations, 2017"
+email: ecobridge@gmail.com
+
+executive_committee:
+  - role: Chairperson
+    name: Tumushime Daniel
+    published: true
+  - role: Secretary
+    name: Namwanga Maria Assumpta
+    published: true
+  - role: Treasurer
+    name: Asobola Elizabeth
+    published: true
+  - role: Vice-Chairperson
+    name: ""
+    published: false
+  - role: "Committee Member — Environment & Climate Action"
+    name: ""
+    published: false
+  - role: "Committee Member — Health, Education & Community Development"
+    name: ""
+    published: false
+  - role: "Committee Member — Livelihoods & Economic Empowerment"
+    name: ""
+    published: false
+
+financial:
+  bank_signatories: "Any two (2) of: Chairperson, Treasurer, Secretary — per Article 24 of our Constitution"
+  financial_year: "1 January – 31 December"
+  audit: "Annual independent audit, presented to the General Assembly at the AGM (Article 26)"
+  use_of_funds: "No income or asset may be distributed to any member or official (Article 25) — non-profit basis only"
+
+documents:
+  - title: Constitution
+    filename: ECO-BRIDGE_KAWEMPE_Constitution.pdf
+  - title: "Work Plan 2026–2027"
+    filename: ECO-BRIDGE_KAWEMPE_WorkPlan_2026.pdf
+  - title: "Activity Report (pilot phase, Dec 2024 – Jan 2025)"
+    filename: ECO-BRIDGE_KAWEMPE_Activity_Report.pdf

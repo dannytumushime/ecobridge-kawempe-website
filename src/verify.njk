@@ -1,0 +1,150 @@
+---
+layout: base.njk
+title: "Verify Us — ECO-BRIDGE KAWEMPE"
+description: "The public record for ECO-BRIDGE KAWEMPE: legal name, registration status, Executive Committee, and links to our Constitution, Work Plan, and Activity Report."
+permalink: /verify/
+trustbar:
+  - label: "Legal name"
+    value: "ECO-BRIDGE KAWEMPE"
+  - label: "Type"
+    value: "Community-Based Organization"
+  - label: "KCCA registration"
+    value: "In progress"
+    pending: true
+---
+<section style="padding-bottom: var(--space-lg);">
+  <div class="wrap">
+    <span class="label">The public record</span>
+    <h1>Verify Us</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">Everything on this page is drawn directly from our signed Constitution and our formal registration minutes with Kampala Capital City Authority (KCCA). Where a fact can be checked against a document, we link the document.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Registration record</span>
+      <h2>Legal identity</h2>
+    </div>
+    <div class="ledger">
+      <div class="ledger-entry">
+        <span class="field">Current legal name</span>
+        <span class="value">{{ org.legal_name }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:40ms">
+        <span class="field">Name history</span>
+        <span class="value">{{ org.name_history }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:80ms">
+        <span class="field">Organization type</span>
+        <span class="value">{{ org.org_type }} (CBO)</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:120ms">
+        <span class="field">Registering authority</span>
+        <span class="value">{{ org.registration_authority }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:160ms">
+        <span class="field">Registration status</span>
+        <span class="value status-pending">{{ org.registration_status }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:200ms">
+        <span class="field">Founded</span>
+        <span class="value">{{ org.founded_date }} — {{ org.founding_members_count }} founding members</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:240ms">
+        <span class="field">Current membership</span>
+        <span class="value">{{ org.current_membership_count }} registered members ({{ org.membership_note }})</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:280ms">
+        <span class="field">Registered office</span>
+        <span class="value">{{ org.registered_office }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:320ms">
+        <span class="field">Area of operation</span>
+        <span class="value">{{ org.area_of_operation }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:360ms">
+        <span class="field">Governed by</span>
+        <span class="value">{{ org.governed_by }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Who runs this organization</span>
+      <h2>Executive Committee</h2>
+      <p style="color:var(--color-text-muted)">Elected under Article 14 of our Constitution, for a three-year term. Seven seats — named office-bearers confirmed below; any remaining seats are published as soon as their details are finalised.</p>
+    </div>
+    <table class="committee-table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for member in org.executive_committee %}
+        <tr>
+          <td>{{ member.role }}</td>
+          {% if member.published %}
+          <td class="name">{{ member.name }}</td>
+          {% else %}
+          <td class="name" style="color:var(--color-text-muted); font-style:italic;">To be published</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Financial accountability</span>
+      <h2>How we handle money</h2>
+    </div>
+    <div class="ledger">
+      <div class="ledger-entry">
+        <span class="field">Bank signatories</span>
+        <span class="value">{{ org.financial.bank_signatories }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:40ms">
+        <span class="field">Financial year</span>
+        <span class="value">{{ org.financial.financial_year }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:80ms">
+        <span class="field">Audit</span>
+        <span class="value">{{ org.financial.audit }}</span>
+      </div>
+      <div class="ledger-entry" style="animation-delay:120ms">
+        <span class="field">Use of funds</span>
+        <span class="value">{{ org.financial.use_of_funds }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Source documents</span>
+      <h2>Read the paperwork yourself</h2>
+      <p style="color:var(--color-text-muted)">Every document below is the same one submitted as part of our KCCA registration file.</p>
+    </div>
+    <div class="doc-list">
+      {% for doc in org.documents %}
+      <div class="doc-card">
+        <div>
+          <div class="doc-title">{{ doc.title }}</div>
+          <div class="doc-meta">{{ doc.filename }}</div>
+        </div>
+        <a class="btn btn-secondary" href="/governance-docs/{{ doc.filename }}">Download PDF</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

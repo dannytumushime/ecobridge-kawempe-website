@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <span class="brand-name">{{ org.brand_name }}</span>
+      <span class="brand-tag">{{ org.tagline }}</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="/verify/" {% if page.url == "/verify/" %}aria-current="page"{% endif %}>Verify Us</a></li>
+        <li><a href="/programs/" {% if page.url == "/programs/" %}aria-current="page"{% endif %}>Programs</a></li>
+        <li><a href="/activities/" {% if page.url == "/activities/" %}aria-current="page"{% endif %}>Our Work</a></li>
+        <li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+{% if trustbar %}
+<div class="trust-bar">
+  <div class="wrap">
+    {% for item in trustbar %}
+    <span class="item"><span class="label">{{ item.label }}</span> <span class="value{% if item.pending %} status-pending{% endif %}">{{ item.value }}</span></span>
+    {% endfor %}
+    {% if trustbar_link %}
+    <span class="item"><a href="{{ trustbar_link.href }}" style="color:#F5F1E8; text-decoration:underline;">{{ trustbar_link.text }} →</a></span>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<main>
+{{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>{{ org.legal_name }}</h4>
+        <p style="opacity:0.9; max-width:32ch;">A community-based organization bridging communities to environmental solutions in {{ org.area_of_operation }}.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/verify/">Verify Us</a></li>
+          <li><a href="/programs/">Programs</a></li>
+          <li><a href="/activities/">Our Work</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:{{ org.email }}">{{ org.email }}</a></li>
+          <li>{{ org.registered_office }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      {{ org.legal_name }} — {{ org.org_type }} — {{ org.area_of_operation }} — KCCA registration {{ org.registration_status_short | lower }}
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

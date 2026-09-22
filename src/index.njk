@@ -1,0 +1,90 @@
+---
+layout: base.njk
+title: "ECO-BRIDGE KAWEMPE — Bridging Communities to Environmental Solutions"
+description: "ECO-BRIDGE KAWEMPE is a 21-member community-based organization in Kawempe Division, Kampala, working on environmental conservation, WASH, and youth livelihoods. Read our Constitution, Work Plan, and Activity Report."
+permalink: /
+trustbar:
+  - label: "Legal name"
+    value: "ECO-BRIDGE KAWEMPE"
+  - label: "Type"
+    value: "Community-Based Organization"
+  - label: "KCCA registration"
+    value: "In progress"
+    pending: true
+trustbar_link:
+  href: /verify/
+  text: "Verify every claim on this site"
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="label eyebrow">{{ org.area_of_operation }}</span>
+      <h1>Real environmental work in Kawempe — and a public record you can check.</h1>
+      <p class="lede">{{ org.legal_name }} is a {{ org.current_membership_count }}-member community-based organization running tree planting, waste management, WASH education, and youth livelihood programs in {{ org.area_of_operation }}. Every claim we make here links back to the actual document behind it.</p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="/verify/">Verify our registration &amp; governance</a>
+        <a class="btn btn-secondary" href="/activities/">See our recent work</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/images/activities/image6.jpg" alt="Two ECO-BRIDGE KAWEMPE members planting a tree seedling by hand during a community restoration drive." loading="eager">
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">What we do</span>
+      <h2>Five objectives, all rooted in {{ org.area_of_operation }}</h2>
+      <p style="color:var(--color-text-muted)">Drawn directly from Article 6 of our Constitution and our 2026–2027 Work Plan — <a href="/verify/">read the full documents</a>.</p>
+    </div>
+    <div class="objective-list">
+      {% for obj in objectives %}
+      <div class="objective">
+        <span class="num mono">{{ obj.number }}</span>
+        <div>
+          <h3>{{ obj.title }}</h3>
+          <p>{{ obj.home_summary }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="button-row">
+      <a class="btn btn-secondary" href="/programs/">See the full 2026–2027 Work Plan</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Recent work</span>
+      <h2>What our members have actually been doing</h2>
+    </div>
+    <div class="photo-grid">
+      {% for photo in activities.home_gallery %}
+      <figure>
+        <img src="{{ photo.image }}" alt="{{ photo.alt }}" loading="lazy">
+        <figcaption>{{ photo.caption }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    <div class="button-row">
+      <a class="btn btn-secondary" href="/activities/">Read the full Activity Report</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="callout">
+      <span class="label">Why this page exists</span>
+      <h3 style="margin-top:var(--space-sm); color:var(--color-text)">A website you can fact-check, not just a website you can read</h3>
+      <p style="margin-bottom:0">Most small community organizations ask you to trust their marketing copy. We'd rather you check our actual paperwork — our Constitution, our Executive Committee, our Work Plan, and our activity record — for yourself.</p>
+      <div class="button-row" style="margin-top:var(--space-md)">
+        <a class="btn btn-primary" href="/verify/">Go to Verify Us →</a>
+      </div>
+    </div>
+  </div>
+</section>
