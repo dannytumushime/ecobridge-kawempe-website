@@ -12,7 +12,7 @@ trustbar:
     value: "In progress"
     pending: true
 trustbar_link:
-  href: /verify/
+  href: /governance/
   text: "Verify every claim on this site"
 ---
 <section class="hero">
@@ -22,7 +22,7 @@ trustbar_link:
       <h1>Real environmental work in Kawempe, and a public record you can check.</h1>
       <p class="lede">{{ org.legal_name }} is a {{ org.current_membership_count }}-member community-based organization running tree planting, waste management, WASH education, and youth livelihood programs in {{ org.area_of_operation }}. Every claim we make here links back to the actual document behind it.</p>
       <div class="button-row">
-        <a class="btn btn-primary" href="/verify/">Verify our registration &amp; governance</a>
+        <a class="btn btn-primary" href="/governance/">Verify our registration &amp; governance</a>
         <a class="btn btn-secondary" href="/activities/">See our recent work</a>
       </div>
     </div>
@@ -32,12 +32,29 @@ trustbar_link:
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: start;" class="about-grid">
+      <div>
+        <span class="label">Our mission</span>
+        <p style="font-size:1.15rem; margin-bottom: var(--space-sm);">{{ org.mission }}</p>
+        <a href="/about/">Read more about us →</a>
+      </div>
+      <div>
+        <span class="label">Who we work with</span>
+        <p style="font-size:1.15rem; margin-bottom: var(--space-sm);">{{ partners.intro }}</p>
+        <a href="/partners/">See all our partners →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section-alt">
   <div class="wrap">
     <div class="section-head">
       <span class="label">What we do</span>
       <h2>Five objectives, all rooted in {{ org.area_of_operation }}</h2>
-      <p style="color:var(--color-text-muted)">Drawn directly from Article 6 of our Constitution and our 2026 to 2027 Work Plan. <a href="/verify/">Read the full documents</a>.</p>
+      <p style="color:var(--color-text-muted)">Drawn directly from Article 6 of our Constitution and our 2026 to 2027 Work Plan. <a href="/programs/">Read the full documents</a>.</p>
     </div>
     <div class="objective-list">
       {% for obj in objectives %}
@@ -83,7 +100,7 @@ trustbar_link:
       <h3 style="margin-top:var(--space-sm); color:var(--color-text)">A website you can fact-check, not just a website you can read</h3>
       <p style="margin-bottom:0">Most small community organizations ask you to trust their marketing copy. We'd rather you check our actual paperwork for yourself: our Constitution, our Executive Committee, our Work Plan, and our activity record.</p>
       <div class="button-row" style="margin-top:var(--space-md)">
-        <a class="btn btn-primary" href="/verify/">Go to Verify Us →</a>
+        <a class="btn btn-primary" href="/governance/">Go to Governance &amp; Accountability →</a>
       </div>
     </div>
   </div>

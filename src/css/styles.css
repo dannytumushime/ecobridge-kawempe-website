@@ -485,7 +485,7 @@ section { padding: var(--space-2xl) 0; }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
   gap: var(--space-xl);
   margin-bottom: var(--space-xl);
 }
@@ -548,6 +548,7 @@ section { padding: var(--space-2xl) 0; }
   .ledger-entry { grid-template-columns: 1fr; gap: var(--space-xs); }
   .committee-table { display: block; overflow-x: auto; }
   .trust-bar .wrap { font-size: 0.78rem; }
+  .about-grid { grid-template-columns: 1fr !important; gap: var(--space-lg) !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {

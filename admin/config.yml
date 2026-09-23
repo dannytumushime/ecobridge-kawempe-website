@@ -34,6 +34,22 @@ collections:
           - { label: "Area of operation", name: "area_of_operation", widget: "string" }
           - { label: "Governed by", name: "governed_by", widget: "text" }
           - { label: "Contact email", name: "email", widget: "string" }
+          - { label: "Vision", name: "vision", widget: "text" }
+          - { label: "Mission", name: "mission", widget: "text" }
+          - label: "Core Values"
+            name: "core_values"
+            widget: "list"
+            field: { label: "Value", name: "value", widget: "string" }
+          - label: "Our Story (one paragraph per entry, in order)"
+            name: "our_story"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Governance structure"
+            name: "governance_structure"
+            widget: "list"
+            fields:
+              - { label: "Body (e.g. The General Assembly)", name: "body", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
           - label: "Executive Committee"
             name: "executive_committee"
             widget: "list"
@@ -41,6 +57,20 @@ collections:
               - { label: "Role", name: "role", widget: "string" }
               - { label: "Name", name: "name", widget: "string", required: false }
               - { label: "Published (uncheck to show \"To be published\")", name: "published", widget: "boolean", default: false }
+              - { label: "Responsibilities (from the Constitution)", name: "responsibilities", widget: "text" }
+          - label: "Membership"
+            name: "membership"
+            widget: "object"
+            fields:
+              - { label: "Eligibility", name: "eligibility", widget: "text" }
+              - label: "Categories"
+                name: "categories"
+                widget: "list"
+                fields:
+                  - { label: "Category name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Fee", name: "fee", widget: "string" }
+              - { label: "How to apply", name: "how_to_apply", widget: "text" }
           - label: "Financial accountability"
             name: "financial"
             widget: "object"
@@ -55,6 +85,21 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Filename (must already be in governance-docs/)", name: "filename", widget: "string" }
+
+  - name: "partners"
+    label: "Partners"
+    files:
+      - name: "partners"
+        label: "Partners content"
+        file: "src/_data/partners.yaml"
+        fields:
+          - { label: "Intro paragraph", name: "intro", widget: "text" }
+          - label: "Partner list"
+            name: "list"
+            widget: "list"
+            fields:
+              - { label: "Partner name", name: "name", widget: "string" }
+              - { label: "Role / relationship", name: "role", widget: "text" }
 
   - name: "programs"
     label: "Programs (Work Plan objectives)"

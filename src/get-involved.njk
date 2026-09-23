@@ -1,0 +1,65 @@
+---
+layout: base.njk
+title: "Get Involved: ECO-BRIDGE KAWEMPE"
+description: "How to join ECO-BRIDGE KAWEMPE as a member, partner with us, or volunteer in Kawempe Division."
+permalink: /get-involved/
+trustbar:
+  - label: "Membership categories"
+    value: "3"
+  - label: "Application review"
+    value: "Within 30 days"
+---
+<section style="padding-bottom: var(--space-lg);">
+  <div class="wrap">
+    <span class="label">Join us</span>
+    <h1>Get Involved</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">{{ org.membership.eligibility }}</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Three ways to belong</span>
+      <h2>Membership Categories</h2>
+    </div>
+    <div class="objective-list">
+      {% for cat in org.membership.categories %}
+      <div class="objective" style="grid-template-columns: 1fr;">
+        <div>
+          <h3 style="margin-bottom: 4px;">{{ cat.name }}</h3>
+          <p style="margin-bottom: var(--space-xs);">{{ cat.description }}</p>
+          <p class="mono" style="color:var(--color-accent); font-size: 0.95rem; margin:0;">{{ cat.fee }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">How to apply</span>
+      <h2>The Process</h2>
+      <p style="color:var(--color-text-muted)">{{ org.membership.how_to_apply }}</p>
+    </div>
+    <div class="button-row">
+      <a class="btn btn-primary" href="mailto:{{ org.email }}?subject=Membership%20application">Apply by email</a>
+      <a class="btn btn-secondary" href="/governance/">Read the full Constitution first</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="callout">
+      <span class="label">Not ready to join</span>
+      <h3 style="margin-top:var(--space-sm); color:var(--color-text)">Volunteer or partner instead</h3>
+      <p style="margin-bottom:0">Our clean-up drives, tree planting, and school outreach programs rely on volunteers from the communities we serve. Schools, businesses, and other organizations can also partner with us directly, see our <a href="/partners/">Partners</a> page for how that typically works.</p>
+      <div class="button-row" style="margin-top:var(--space-md)">
+        <a class="btn btn-primary" href="/contact/">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>

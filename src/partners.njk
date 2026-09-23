@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: "Partners: ECO-BRIDGE KAWEMPE"
+description: "Who ECO-BRIDGE KAWEMPE works with: KCCA, Local Council leaders, schools, NEMA, and the communities of Kawempe Division."
+permalink: /partners/
+trustbar:
+  - label: "Named partners"
+    value: "5"
+  - label: "Area"
+    value: "Kawempe Division, Kampala"
+---
+<section style="padding-bottom: var(--space-lg);">
+  <div class="wrap">
+    <span class="label">Who we work with</span>
+    <h1>Partners</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">{{ partners.intro }}</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="ledger">
+      {% for p in partners.list %}
+      <div class="ledger-entry" style="animation-delay:{{ loop.index0 * 40 }}ms">
+        <span class="field">{{ p.name }}</span>
+        <span class="value" style="font-family: var(--font-body); font-size: 1rem;">{{ p.role }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="callout">
+      <span class="label">Want to partner with us</span>
+      <h3 style="margin-top:var(--space-sm); color:var(--color-text)">We're always open to genuine collaboration in Kawempe Division</h3>
+      <p style="margin-bottom:0">If your school, organization, or agency wants to work with us on environmental conservation, WASH, or youth livelihoods, get in touch.</p>
+      <div class="button-row" style="margin-top:var(--space-md)">
+        <a class="btn btn-primary" href="/contact/">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,8 +1,8 @@
 ---
 layout: base.njk
-title: "Verify Us: ECO-BRIDGE KAWEMPE"
-description: "The public record for ECO-BRIDGE KAWEMPE: legal name, registration status, Executive Committee, and links to our Constitution, Work Plan, and Activity Report."
-permalink: /verify/
+title: "Governance & Accountability: ECO-BRIDGE KAWEMPE"
+description: "The public record for ECO-BRIDGE KAWEMPE: legal name, registration status, financial controls, and links to our Constitution, Work Plan, and Activity Report."
+permalink: /governance/
 trustbar:
   - label: "Legal name"
     value: "ECO-BRIDGE KAWEMPE"
@@ -15,7 +15,7 @@ trustbar:
 <section style="padding-bottom: var(--space-lg);">
   <div class="wrap">
     <span class="label">The public record</span>
-    <h1>Verify Us</h1>
+    <h1>Governance &amp; Accountability</h1>
     <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">Everything on this page is drawn directly from our signed Constitution and our formal registration minutes with Kampala Capital City Authority (KCCA). Where a fact can be checked against a document, we link the document.</p>
   </div>
 </section>
@@ -74,36 +74,6 @@ trustbar:
 <section class="section-alt">
   <div class="wrap">
     <div class="section-head">
-      <span class="label">Who runs this organization</span>
-      <h2>Executive Committee</h2>
-      <p style="color:var(--color-text-muted)">Elected under Article 14 of our Constitution, for a three-year term. Seven seats in total: named office-bearers are confirmed below, and any remaining seats are published as soon as their details are finalised.</p>
-    </div>
-    <table class="committee-table">
-      <thead>
-        <tr>
-          <th>Role</th>
-          <th>Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for member in org.executive_committee %}
-        <tr>
-          <td>{{ member.role }}</td>
-          {% if member.published %}
-          <td class="name">{{ member.name }}</td>
-          {% else %}
-          <td class="name" style="color:var(--color-text-muted); font-style:italic;">To be published</td>
-          {% endif %}
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
       <span class="label">Financial accountability</span>
       <h2>How we handle money</h2>
     </div>
@@ -128,7 +98,7 @@ trustbar:
   </div>
 </section>
 
-<section class="section-alt">
+<section>
   <div class="wrap">
     <div class="section-head">
       <span class="label">Source documents</span>
@@ -145,6 +115,19 @@ trustbar:
         <a class="btn btn-secondary" href="/governance-docs/{{ doc.filename }}">Download PDF</a>
       </div>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="callout">
+      <span class="label">Who runs the organization</span>
+      <h3 style="margin-top:var(--space-sm); color:var(--color-text)">See the Executive Committee and their responsibilities</h3>
+      <p style="margin-bottom:0">Elected under Article 14 of our Constitution, for a three-year term.</p>
+      <div class="button-row" style="margin-top:var(--space-md)">
+        <a class="btn btn-primary" href="/leadership/">View Leadership →</a>
+      </div>
     </div>
   </div>
 </section>

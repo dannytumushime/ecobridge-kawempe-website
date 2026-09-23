@@ -15,28 +15,75 @@ area_of_operation: Kawempe Division, Kampala
 governed_by: "Constitution of the Republic of Uganda, 1995 (as amended); NGO Act, 2016; NGO Regulations, 2017"
 email: ecobridge@gmail.com
 
+vision: "To see communities living in a clean, healthy, and sustainable environment, where youth and women are empowered to take leadership in environmental conservation and community development."
+mission: "To empower communities, particularly youth and women, through environmental conservation, health promotion, skills development, and civic engagement, in order to build cleaner, healthier, and more resilient communities."
+
+core_values:
+  - "Environmental stewardship and care for the community"
+  - "Integrity, honesty, and transparency in all activities"
+  - "Inclusivity and equal opportunity for all members and beneficiaries"
+  - "Community participation and ownership"
+  - "Accountability to members, beneficiaries, and partners"
+  - "Respect for human rights and dignity"
+
+our_story:
+  - "ECO-BRIDGE KAWEMPE began on 11 January 2025, when eight founding members met in Kampala out of a shared concern for environmental degradation, poor sanitation, and limited youth opportunity."
+  - "Over the following year, the group ran pilot activities across Kampala: school outreach, waste segregation campaigns, tree planting, and air quality awareness sessions. That experience is documented in full on our Our Work page."
+  - "On 23 August 2025, members adopted the organization's Vision, Mission, Core Values, and Strategic Plan after months of drafting against Uganda's NGO Act, 2016 and NGO Regulations, 2017."
+  - "In February 2026, on the advice of the KCCA Bwaise Community Development Officer, the organization renamed itself from ECO-BRIDGE AFRICA to ECO-BRIDGE, since a Community-Based Organization's name must match its actual geographic scope of operation."
+  - "By 1 March 2026, membership had grown to 21 registered members, past KCCA's 20-member threshold for CBO registration. Members elected a seven-seat Executive Committee and confirmed the current registration name, ECO-BRIDGE KAWEMPE, anchored to Kawempe Division, where the organization's work is concentrated."
+
 executive_committee:
   - role: Chairperson
     name: Tumushime Daniel
     published: true
+    responsibilities: "Provides overall leadership and direction, presides over General and Executive Committee meetings, represents the organization to government and partners, and is a principal signatory to the bank accounts."
   - role: Secretary
     name: Namwanga Maria Assumpta
     published: true
+    responsibilities: "Keeps all records, minutes, and correspondence, issues meeting notices, maintains the register of members, and prepares reports to KCCA and other authorities."
   - role: Treasurer
     name: Asobola Elizabeth
     published: true
+    responsibilities: "Receives, records, and safeguards all funds, prepares financial reports, maintains the books of accounts, and is a principal signatory to the bank accounts."
   - role: Vice-Chairperson
     name: ""
     published: false
+    responsibilities: "Assists the Chairperson and assumes the Chairperson's duties in their absence."
   - role: "Committee Member: Environment & Climate Action"
     name: ""
     published: false
+    responsibilities: "Leads planning and implementation of activities under Objective 1: environmental conservation, waste management, and pollution reduction."
   - role: "Committee Member: Health, Education & Community Development"
     name: ""
     published: false
+    responsibilities: "Leads planning and implementation of activities under Objectives 2 and 4: WASH promotion, health awareness, and environmental literacy."
   - role: "Committee Member: Livelihoods & Economic Empowerment"
     name: ""
     published: false
+    responsibilities: "Leads planning and implementation of activities under Objective 3: composting, plastic upcycling, and other income-generating projects."
+
+governance_structure:
+  - body: "The General Assembly"
+    description: "All Ordinary Members in good standing. The supreme decision-making body: adopts and amends the Constitution, elects and removes the Executive Committee, and approves reports, budgets, and dissolution."
+  - body: "The Executive Committee"
+    description: "Seven elected members serving three-year terms. The executive and management body, meeting at least monthly."
+  - body: "Sub-committees"
+    description: "Established from time to time by the Executive Committee, including the Project Management Committee and Procurement Sub-Committee named in our Work Plan."
+
+membership:
+  eligibility: "Open to any Ugandan citizen aged 18 or older who subscribes to the organization's objectives and agrees to abide by the Constitution."
+  categories:
+    - name: Ordinary Members
+      description: "Full membership rights, including the right to vote and to be elected to office."
+      fee: "UGX 25,000 one-time registration, UGX 50,000 annual subscription"
+    - name: Associate Members
+      description: "Organizations or institutions admitted to support the organization, with observer status only."
+      fee: "UGX 100,000 annual subscription"
+    - name: Honorary Members
+      description: "Distinguished individuals recognised by the General Assembly for outstanding contribution."
+      fee: "Exempt from all fees"
+  how_to_apply: "Applications are submitted in writing to the Secretary and considered by the Executive Committee within 30 days of receipt."
 
 financial:
   bank_signatories: "Any two (2) of Chairperson, Treasurer, or Secretary, as set out in Article 24 of our Constitution"

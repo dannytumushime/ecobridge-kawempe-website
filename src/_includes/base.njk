@@ -18,9 +18,11 @@
     <nav class="main-nav" aria-label="Primary">
       <ul>
         <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
-        <li><a href="/verify/" {% if page.url == "/verify/" %}aria-current="page"{% endif %}>Verify Us</a></li>
+        <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a></li>
         <li><a href="/programs/" {% if page.url == "/programs/" %}aria-current="page"{% endif %}>Programs</a></li>
         <li><a href="/activities/" {% if page.url == "/activities/" %}aria-current="page"{% endif %}>Our Work</a></li>
+        <li><a href="/governance/" {% if page.url == "/governance/" %}aria-current="page"{% endif %}>Governance</a></li>
+        <li><a href="/get-involved/" {% if page.url == "/get-involved/" %}aria-current="page"{% endif %}>Get Involved</a></li>
         <li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li>
       </ul>
     </nav>
@@ -53,12 +55,20 @@
         <p style="opacity:0.9; max-width:32ch;">A community-based organization bridging communities to environmental solutions in {{ org.area_of_operation }}.</p>
       </div>
       <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/partners/">Partners</a></li>
+        </ul>
+      </div>
+      <div>
         <h4>Site</h4>
         <ul>
-          <li><a href="/verify/">Verify Us</a></li>
           <li><a href="/programs/">Programs</a></li>
           <li><a href="/activities/">Our Work</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/governance/">Governance</a></li>
+          <li><a href="/get-involved/">Get Involved</a></li>
         </ul>
       </div>
       <div>

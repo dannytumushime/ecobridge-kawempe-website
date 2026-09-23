@@ -1,0 +1,65 @@
+---
+layout: base.njk
+title: "Leadership: ECO-BRIDGE KAWEMPE"
+description: "ECO-BRIDGE KAWEMPE's governance structure and Executive Committee, with each role's constitutional responsibilities."
+permalink: /leadership/
+trustbar:
+  - label: "Governing body"
+    value: "Executive Committee"
+  - label: "Term"
+    value: "3 years"
+---
+<section style="padding-bottom: var(--space-lg);">
+  <div class="wrap">
+    <span class="label">Who runs this organization</span>
+    <h1>Leadership</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">Governance runs through two bodies set out in our Constitution: the General Assembly and the Executive Committee.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="ledger">
+      {% for g in org.governance_structure %}
+      <div class="ledger-entry" style="animation-delay:{{ loop.index0 * 40 }}ms">
+        <span class="field">{{ g.body }}</span>
+        <span class="value" style="font-family: var(--font-body); font-size: 1rem;">{{ g.description }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Seven elected seats, three-year terms</span>
+      <h2>Executive Committee</h2>
+    </div>
+    <div class="objective-list">
+      {% for member in org.executive_committee %}
+      <div class="objective" style="grid-template-columns: 1fr;">
+        <div>
+          <h3 style="margin-bottom: 4px;">{{ member.role }}</h3>
+          {% if member.published %}
+          <p class="mono" style="color:var(--color-primary); font-size:1rem; margin-bottom: var(--space-xs);">{{ member.name }}</p>
+          {% else %}
+          <p style="font-style: italic; color:var(--color-text-muted); margin-bottom: var(--space-xs);">To be published</p>
+          {% endif %}
+          <p style="margin:0;">{{ member.responsibilities }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="callout">
+      <span class="label">The full record</span>
+      <h3 style="margin-top:var(--space-sm); color:var(--color-text)">Elections, terms, and removal are all in writing</h3>
+      <p style="margin-bottom:0">Articles 14 through 17 of our Constitution cover how the Executive Committee is elected, how vacancies are filled, and the process for removing a member from office. <a href="/governance/">Download the full Constitution on our Governance page</a>.</p>
+    </div>
+  </div>
+</section>

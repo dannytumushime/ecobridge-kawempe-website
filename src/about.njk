@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: "About Us: ECO-BRIDGE KAWEMPE"
+description: "ECO-BRIDGE KAWEMPE's vision, mission, core values, and story, from eight founding members in January 2025 to a 21-member registered CBO."
+permalink: /about/
+trustbar:
+  - label: "Founded"
+    value: "11 January 2025"
+  - label: "Founding members"
+    value: "8"
+  - label: "Members today"
+    value: "21"
+---
+<section style="padding-bottom: var(--space-lg);">
+  <div class="wrap">
+    <span class="label">Who we are</span>
+    <h1>About Us</h1>
+    <p class="lede" style="color:var(--color-text-muted); max-width:64ch;">{{ org.legal_name }} is a community-based organization working on environmental conservation, public health, and youth livelihoods in Kawempe Division, Kampala.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl);" class="about-grid">
+      <div>
+        <span class="label">Vision</span>
+        <p style="font-size:1.15rem;">{{ org.vision }}</p>
+      </div>
+      <div>
+        <span class="label">Mission</span>
+        <p style="font-size:1.15rem;">{{ org.mission }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">What we hold ourselves to</span>
+      <h2>Core Values</h2>
+    </div>
+    <div class="objective-list">
+      {% for value in org.core_values %}
+      <div class="objective" style="grid-template-columns: 1fr;">
+        <p style="margin:0; font-size:1.1rem; color:var(--color-text)">{{ value }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">From eight people to a registered CBO</span>
+      <h2>Our Story</h2>
+    </div>
+    <div style="max-width: 70ch;">
+      {% for para in org.our_story %}
+      <p style="font-size:1.1rem;">{{ para }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Go deeper</span>
+      <h2>Governance and partnerships</h2>
+    </div>
+    <div class="doc-list">
+      <div class="doc-card">
+        <div>
+          <div class="doc-title">Leadership</div>
+          <div class="doc-meta">Our Executive Committee and their constitutional responsibilities</div>
+        </div>
+        <a class="btn btn-secondary" href="/leadership/">View Leadership</a>
+      </div>
+      <div class="doc-card">
+        <div>
+          <div class="doc-title">Partners</div>
+          <div class="doc-meta">Who we work with, and in what capacity</div>
+        </div>
+        <a class="btn btn-secondary" href="/partners/">View Partners</a>
+      </div>
+      <div class="doc-card">
+        <div>
+          <div class="doc-title">Governance &amp; Accountability</div>
+          <div class="doc-meta">Registration status, financial controls, and source documents</div>
+        </div>
+        <a class="btn btn-secondary" href="/governance/">View Governance</a>
+      </div>
+    </div>
+  </div>
+</section>
