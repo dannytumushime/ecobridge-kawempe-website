@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stupendous-moxie-f20298.netlify.app/sitemap.xml

@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/governance-docs");
   eleventyConfig.addPassthroughCopy({ admin: "admin" });
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   return {
     dir: {
